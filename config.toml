@@ -2,7 +2,7 @@ baseURL = "/"
 title = "My Portfolio Title"
 theme = "hugo-coder"
 
-# Theme configuration
+# Theme configurations
 [params]
 env = "production"
 author = "<author>"
