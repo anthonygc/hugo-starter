@@ -1,6 +1,6 @@
 baseURL = "/"
 title = "My Portfolio Title"
-theme = "PaperMod"
+theme = "hugo-coder"
 
 # Theme configuration
 [params]
