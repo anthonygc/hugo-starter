@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "My Portfolio Title"
+title = "Anthony Grant-Cook"
 theme = "hugo-coder"
 
 # Theme configurations
@@ -71,6 +71,6 @@ weight = 20
 
 [[menu.main]]
 identifier = "link"
-name = "A link"
-url = "https://google.com/search?tbm=isch&q=cute%20puppies"
+name = "Photography"
+url = "/Photography/"
 weight = 30
