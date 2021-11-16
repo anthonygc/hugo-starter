@@ -15,7 +15,7 @@ enableEmoji = true
 author = "Anthony Grant-Cook"
 description = "Anthony Grant-Cook's personal website"
 keywords = "Artist, developer, computational neroscientist"
-info = ["Full Stack DevOps", "Magician"]
+info = ["Programmer", "Artist","Neuroscientist"]
 avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
@@ -97,7 +97,7 @@ author = "authors"
 name = "Github"
 icon = "fa fa-2x fa-github"
 weight = 1
-url = "https://github.com/johndoe/"
+url = "https://github.com/anthonygc"
 
 [[params.social]]
 name = "Gitlab"
@@ -115,7 +115,7 @@ url = "https://twitter.com/johndoe/"
 name = "LinkedIn"
 icon = "fa fa-2x fa-linkedin"
 weight = 4
-url = "https://www.linkedin.com/in/johndoe/"
+url = " www.linkedin.com/in/AnthonyGrant-Cook"
 
 [[params.social]]
 name = "Medium"
