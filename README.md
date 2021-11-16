@@ -1,62 +1,59 @@
-# hugo-starter
+<p align="center">
+  <p align="center">
+    <a href="https://themes.gohugo.io/hugo-coder/">
+      <img src="https://img.shields.io/badge/theme-hugo--coder-2b8cbe" alt="Hugo Theme Badge"">
+    </a>
+    <a href="https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.txt">
+      <img src="https://img.shields.io/github/license/luizdepra/hugo-coder.svg" alt="MIT License Badge">
+    </a>
+  </p>
 
-This repository contains a template that uses [Netlify](https://www.netlify.com/), [Hugo](https://gohugo.io/), and the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) Hugo theme. Read the the `README.md` file below for step-by-step instructions to get a personal portfolio website up and running.
+  <p align="center">
+    <a href="https://github.com/luizdepra/hugo-coder">
+      <img src="images/logos/logotype-a.png" alt="Hugo Coder Logo" width="600px" height="184px">
+    </a>
+  </p>
+</p>
 
-## Step 1: Deploy this template
+A simple and clean blog theme for [Hugo](https://gohugo.io/).
 
-To start using this template, deploy it to [Netlify](https://www.netlify.com/) with the button below.
+![](https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/allegheny-college-junior-innovators/hugo-starter)
+## Live Demo
 
-You will need to create an account if you don't have one, and link your GitHub account.
+See [here](https://hugo-coder.netlify.app/).
 
-This button will cause Netlify to authenticate with GitHub and create a new repository based off of this template, and then set up deployment through Netlify's hosting services.
+## Quick Start
 
-## Step 2: Set your URL
+1. Add the repository into your Hugo Project repository as a submodule, `git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder`.
+2. Configure your `config.toml`. You can either use [this minimal configuration](https://github.com/luizdepra/hugo-coder/wiki/Configurations#complete-example) as a base, or look for a complete explanation about all configurations [here](https://github.com/luizdepra/hugo-coder/wiki/Configurations). The [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [`exampleSite`](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) is also a good reference.
+3. Build your site with `hugo server` and see the result at `http://localhost:1313/`.
 
-Now that you have your website set up on Netlify, click on the "Deploys" tab and view the most recent deploy -- that is the template itself being built! To visit your new website, look under the "Deploys for ..." header for a link ending in `netlify.app`. You can visit that link and see the base template.
+## Extra Guides
 
-However, that link is not the most useful or memorable web address -- let's change it to something better! In Netlify, navigate to the "Site settings" tab (it is at the very end of the navigation bar at the top). Then, click the "Change site name" button and enter a better url for your site, like your name.
+* [Multilingual Mode](https://github.com/luizdepra/hugo-coder/wiki/Multilingual-Mode)
 
-Once you have done that, you can navigate back to the Deploys tab or look at the top of the Site settings for the new link to your website; save that link as you'll want to enter it as the `baseURL` value in a later step, and share it with your network.
+## Stackbit
 
-## Step 3: Customize your website
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful.
 
-Navigate to the "Deploys" tab in Netlify again, and look for the GitHub link under the "Deploys for ..." header. Click that, and you'll be navigated to the repository that Netlify created for you! Now, edit the files in this repository to set the contents of your website. The following values and files should be configured or removed.
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/luizdepra/hugo-coder)
 
-> If you're in a hurry, hit `.` when you're on the main repository page on GitHub and a web instance of VSCode will open. You can use this editor to edit files, make commits, and view the README, although you cannot run any terminal commands.
+## License
 
-In `config.toml`:
+Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md).
 
-- The `baseURL` key, to match what your chosen URL is on Netlify.
-- The `title` key, to configure what your website is titled (and thus what the browser tab is named).
-- Entries in the `[params]` table, to configure the `author`, `description`, `keywords`, and various other theme options.
-- Entries in the `[params.label]` table, to configure the home label in the top-left corner.
-- Entries in the `[params.profileMode]` table, to configure what you'd like to display on the main page.
-- Entries in the `[params.profileMode.buttons]` array of tables, to configure what buttons you'd like on the main page. You can also remove the existing entries to have no buttons.
-- Entries in the `[params.socialIcons]` array of tables, to configure what social icons and links are on the main page.
-- Entries in the `[menu.main]` array of tables, to configure the top navigation links.
+## Maintenance
 
-In `static/`:
+This theme is maintained by its author [Luiz de Prá](https://github.com/luizdepra) with the help from these awesome [contributors](CONTRIBUTORS.md).
 
-- `profile.png`, to configure the image to show on the main page (or, if you'd like no image, remove the `image`-related keys in the `[params.profileMode]` table in `config.toml`)
-- Any other static assets like images, fonts, or other static files and folders that you might want to link, reference, or use in your website. These will be available under the root directory of your website -- so, `profile.png` can be directly linked to with `/profile.png`.
+## Sponsoring
 
-In `contents/`:
+If you like my project or it was useful for you, consider supporting its development. Just:
 
-- The contents (and existence) of the `blog/` folder, if you'd like to have blog posts on your website.
-- The contents of the `projects/` folder -- either edit `_index.md` to show your project details all on one page, or create a project file for each ( use `hugo new --kind project projects/<name-of-project>`), which will be displayed as a card on the projects page.
-- Any additional folders and/or files you'd like; each can be linked to by their file path, so `content/test-folder/my-page.md` would be accessed on your website as `/test-folder/my-page`, and you can add links to them in other pages or the top navigation menu.
+<a href="https://www.buymeacoffee.com/luizdepra" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-green.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-Experimentation and creativity in organizing and creating content for your website is very important! If you are confused or would like to find out more about the possible configuration options of the PaperMod theme, visit the [demo website](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/), which lists many of the available configuration options not used in this template.
+## Special Thanks
 
-## Alternatives
-
-If the PaperMod theme isn't quite to your liking, you can easily remove it (use `git rm themes/PaperMod`) and use a different theme! There are many to choose from; [themes.gohugo.io](https://themes.gohugo.io/) contains hundreds of options. Below are a few options and the command you could use to add that theme (after removing PaperMod).
-
-- [Gokarna](https://github.com/526avijitgupta/gokarna) - `git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna` - [Setup Guide](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/)
-- [Developer Portfolio](https://github.com/samrobbins85/hugo-developer-portfolio) - `git submodule add https://github.com/samrobbins85/hugo-developer-portfolio themes/hugo-developer-portfolio`
-- [Highlights](https://github.com/schmanat/hugo-highlights-theme) - `git submodule add https://github.com/schmanat/hugo-highlights-theme.git themes/hugo-highlights-theme`
-- [Osprey Delight](https://github.com/kdevo/osprey-delight) - `git submodule add https://github.com/kdevo/osprey-delight.git themes/osprey-delight`
-
-Keep in mind that every theme is different, and you will need to read through the documentation to discover what entries you can add to `config.toml` and what content structure you should have in `content/`.
+- Gleen McComb, for his great [article](https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/) about custom pagination.
+- All contributors, for every PR and Issue reported.
